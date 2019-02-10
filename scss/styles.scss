@@ -77,8 +77,24 @@ header{
             letter-spacing: 0.6px;
             text-decoration: none;
             font-weight: 400;
+            position: relative;
             &:hover, &.active{
               color:$text-color2;
+            }
+
+          }
+          .dropdown{
+            display: flex;
+            align-items:center;
+            &:after{
+              width: 0;
+              height: 0;
+              border-left: 3px solid transparent;
+              border-right: 3px solid transparent;
+              border-top: 3px solid $grey;
+              @include after-before;
+              position: static;
+              margin:0 2px 0 0;
             }
           }
           .menu{
@@ -429,6 +445,7 @@ header{
         font-size: 42px;
         font-weight: 300;
         position: relative;
+        min-height: 219px;
         &:after, &:before{
           @include after-before;
           width:24px;
@@ -801,6 +818,12 @@ footer{
   }
 }
 @media(max-width:1280px){
+  .change .right-side img{
+    right:-15%;
+  }
+  .change .left-side p {
+    padding: 10px 0 10px 0;
+  }
   .content-slider ul {
     max-width: 594px;
     max-height: 497px;
@@ -880,8 +903,41 @@ footer{
   .content-slider{
     height:162vw;
   }
+  .change .left-side h2{
+    font-size:36px;
+  }
 }
 @include mobile{
+  .change .right-side, .change .left-side > div .arrow {
+   display: none;
+  }
+  .change .left-side{
+    width:100%;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+      text-align:center;
+    }
+  }
+  footer h2{
+    font-size:50px;
+    line-height: 60px;
+  }
+  footer{
+  .footer-navigation {
+    flex-direction: column;
+    align-itmes: center;
+
+    .left-side{
+      width: 100%;
+    }
+    .right-side{
+      text-align:center;
+    }
+  }
+  }
   .content-slider ul{
     left:0;
     max-width: 438px;
@@ -988,8 +1044,25 @@ footer{
       }
     }
   }
+  .header{
+    flex-direction: column;
+    align-items: center;
+  }
+  header .header .navigation > li {
+    padding: 0 8px;
+  }
+  header .header .navigation > li .btn{
+    padding:10px;
+  }
 }
 @media(max-width:640px){
+  header .header .navigation{
+    padding-top:40px;
+    flex-direction: column;
+    li{
+      padding: 0px 0 43px 0;
+    }
+  }
   .cs_arrowprev, .cs_arrownext{
     width:60px;
     height:48px;
@@ -1043,6 +1116,11 @@ footer{
   }
 }
 @media(max-width:480px){
+  footer .footer-navigation .left-side {
+   flex-direction: column;
+    align-items:center;
+    text-align:center;
+  }
   .do-it{
     .picture-wrap{
       .picture-item{
