@@ -1,0 +1,12 @@
+i {
+  display: block; }
+
+.icon-comment {
+  width: 33px;
+  height: 32px;
+  background: url(../images/icon-comment.png); }
+
+.icon-repost {
+  width: 44px;
+  height: 36px;
+  background: url(../images/icon-repost.png); }
