@@ -769,6 +769,7 @@ footer{
   }
   h2{
     font-size:50px;
+
   }
   .container{
     max-width:100%;
@@ -779,7 +780,7 @@ footer{
       width:100%;
       .slick-slide{
         blockquote{
-          padding:10px;
+          padding:60px 10px 20px;
           width:92%;
           font-size:30px;
         }
@@ -990,8 +991,11 @@ footer{
   .features{
     .container-wrap{
       flex-direction: column;
+      padding-top:50px;
+      padding-bottom:50px;
       .features-item{
         width:100%;
+        padding-bottom:20px;
         h4{
           justify-content: center;
         }
@@ -1002,9 +1006,12 @@ footer{
   .features-second{
     .container-wrap{
       flex-direction: column;
+      padding-top:50px;
+      padding-bottom:50px;
       .features-item{
         width:100%;
         text-align:center;
+        padding-bottom:40px;
       }
     }
   }
@@ -1014,10 +1021,15 @@ footer{
       .pricing-plan{
         width:100%;
         text-align:center;
+        padding:20px 0 40px 0;
+        p{
+          padding:0 10px 20px;
+        }
       }
     }
   }
   .platform{
+    padding-top:50px;
     .container-wrap{
       .platform-wrap{
         flex-direction: column;
@@ -1025,19 +1037,26 @@ footer{
           width:100%;
           flex-direction: column;
           align-items:center;
+          .icon-wrap{
+            margin:0 0 10px 0;
+          }
           h5{
             text-align: center;
             padding-bottom:20px;
+          }
+          p{
+            text-align:center;
           }
         }
       }
     }
   }
   .testimonials{
+    padding-bottom:30px;
     .testimonials-slider{
       .slick-slide{
         blockquote{
-          padding:20px;
+          padding:50px 20px 20px;
           width:84%;
           font-size:22px;
         }
@@ -1081,6 +1100,9 @@ footer{
     height:206vw;
   }
   .do-it{
+    h6{
+      padding-top:0;
+    }
     .picture-wrap{
       .picture-item{
         &:nth-of-type(1) {
@@ -1116,12 +1138,22 @@ footer{
   }
 }
 @media(max-width:480px){
+  h2{
+    font-size:30px;
+  }
+  .join{
+    h2{
+      padding-top:30px;
+      padding-bottom:30px;
+    }
+  }
   footer .footer-navigation .left-side {
    flex-direction: column;
     align-items:center;
     text-align:center;
   }
   .do-it{
+    margin-bottom:-150px;
     .picture-wrap{
       .picture-item{
         &:nth-of-type(1) {
@@ -1158,9 +1190,34 @@ footer{
   .content-slider ul{
     max-width: 249px;
     max-height: 209px;
+    li{
+      img{
+        max-width:70px;
+        max-height:50px;
+      }
+    }
   }
-  .content-slider .started-block {
-    right: 9%;
-    top: 31%;
+  .content-slider {
+    height:auto;
+    padding:20px 10px;
+    ul{
+      display: none;
+    }
+    .started-block {
+      position: static;
+      width:100%;
+      max-width:100%;
+    }
+
+    .cs_arrowprev, .cs_arrownext{
+    display: none;
+    }
   }
+}
+section{
+  opacity: 0;
+  transition: opacity 1s;
+}
+section.scroll-watch-in-view {
+  opacity: 1;
 }

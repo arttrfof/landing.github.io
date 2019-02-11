@@ -1,4 +1,12 @@
-AOS.init();
+var sw = new ScrollWatch({
+    onElementInView: function(data) {
+        console.log(data.el, '...is now in view');
+    },
+    watchOnce: true,
+    scrollThrottle:500,
+    ignoreClass: 'scroll-watch-ignore'
+});
+
 $('.testimonials-slider').slick({
     infinite: true,
     slidesToShow: 3,
@@ -32,10 +40,3 @@ $('.testimonials-slider').slick({
 
     ]
 });
-var all = document.getElementsByTagName("*"), i = 0, rect, docWidth = document.documentElement.offsetWidth;
-for (; i < all.length; i++) {
-    rect = all[i].getBoundingClientRect();
-    if (rect.right > docWidth || rect.left < 0){
-        console.log(all[i]);
-    }
-}

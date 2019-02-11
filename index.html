@@ -12,7 +12,6 @@ and open the template in the editor.
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
@@ -38,14 +37,14 @@ and open the template in the editor.
                 </li>
             </ul>
         </div>
-        <div class="header-content container-wrap" data-aos="zoom-in">
+        <div class="header-content container-wrap">
             <div>
             <h1>Get Some Fresh Hair</h1>
             <p>fjord - modern landing page</p>
             </div>
         </div>
     </header>
-    <section class="features" data-aos="fade-up"  data-aos-duration="1000">
+    <section class="features" data-scroll-watch>
         <div class="container-wrap">
             <div class="features-item">
                 <div class="icon-wrap">
@@ -73,7 +72,7 @@ and open the template in the editor.
             </div>
         </div>
     </section>
-    <section class="content-slider">
+    <section class="content-slider"  data-scroll-watch>
         <input type="radio" class="cs_anchor" name="cs_anchor" id="cs_slide1_0" checked>
         <input type="radio" class="cs_anchor" name="cs_anchor" id="cs_slide1_1">
         <input type="radio" class="cs_anchor" name="cs_anchor" id="cs_slide1_2">
@@ -103,7 +102,7 @@ and open the template in the editor.
             <label class="num2" for="cs_slide1_2"><i class="fas fa-chevron-right"></i></label>
         </div>
         <div class="background"></div>
-        <div class="started-block" data-aos="fade-left">
+        <div class="started-block">
             <div class="started-item">
                 <img src="images/website.png" height="60" width="60"/>
                 <div>
@@ -134,13 +133,13 @@ and open the template in the editor.
             <a href="#" class="btn-get-started">Get started</a>
         </div>
     </section>
-    <section class="build">
-        <div class="container-wrap" data-aos="fade-up"  data-aos-duration="1000">
+    <section class="build" data-scroll-watch>
+        <div class="container-wrap">
             <h2>Build it beautiful</h2>
             <p>Sometimes bold ideas don't require a full website. That's why Cover Pages can be used to convey a single idea in a beautiful way.</p>
         </div>
     </section>
-    <section class="features-second"  data-aos="fade-up"  data-aos-duration="1000">
+    <section class="features-second" data-scroll-watch>
         <div class="container-wrap">
             <div class="features-item">
                 <h4>Dummy Content</h4>
@@ -161,10 +160,8 @@ and open the template in the editor.
             </div>
         </div>
     </section>
-    <secton class="change">
-        <div class="left-side" data-aos="fade-right"
-             data-aos-offset="300"
-             data-aos-easing="ease-in-sine">
+    <secton class="change" data-scroll-watch>
+        <div class="left-side">
             <h2>This will change everything</h2>
             <p>
                 Your eCommerce website is just the start. Whether you are an established business or on the brink of a new idea, Squarespace gives you the tools to take your business from online store to recognized brand.
@@ -178,7 +175,7 @@ and open the template in the editor.
             <img src="images/iPad.png" height="741" width="906"/>
         </div>
     </secton>
-    <section class="platform">
+    <section class="platform" data-scroll-watch>
         <div class="container-wrap">
             <h5>Platform features</h5>
             <p>At first, for some time. I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground</p>
@@ -253,7 +250,7 @@ and open the template in the editor.
             </div>
         </div>
     </section>
-    <section class="testimonials">
+    <section class="testimonials" data-scroll-watch>
         <div class="testimonials-slider">
             <div>
                 <blockquote>
@@ -303,7 +300,7 @@ and open the template in the editor.
             </div>
         </div>
     </section>
-    <section class="do-it">
+    <section class="do-it" data-scroll-watch>
         <h6>Do it by yourself</h6>
         <div class="picture-wrap">
         <div class="picture-item">
@@ -364,12 +361,12 @@ and open the template in the editor.
             </div>
         </div>
     </section>
-    <section class="join">
-        <h2 data-aos="fade-up">Join over 1 million customers</h2>
+    <section class="join" data-scroll-watch>
+        <h2>Join over 1 million customers</h2>
     </section>
-    <section class="pricing">
+    <section class="pricing" data-scroll-watch>
         <div class="container-wrap">
-            <div class="pricing-plan"  data-aos="flip-up"  data-aos-duration="1000">
+            <div class="pricing-plan">
                 <h5>Beginner</h5>
                 <div class="price">$4.99</div>
                 <p>Alice wondered a little at this, but she was too much in awe of the Queen to disbelieve it. 'I'll try it when I go home,' she thought to herself, 'the next time I'm a little late for dinner.'</p>
@@ -454,7 +451,7 @@ and open the template in the editor.
     </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/ScrollWatch-2.0.1.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
