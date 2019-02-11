@@ -31,6 +31,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html {
+  overflow-x: hidden; }
+
 body {
   font-family: "Montserrat", sans-serif;
   background: #f5f6f8;
@@ -1139,6 +1142,9 @@ footer {
 @media (max-width: 480px) {
   h2 {
     font-size: 30px; }
+  footer h2 {
+    font-size: 36px;
+    line-height: 44px; }
   .join h2 {
     padding-top: 30px;
     padding-bottom: 30px; }
@@ -1183,6 +1189,10 @@ footer {
   .content-slider {
     height: auto;
     padding: 20px 10px; }
+    .content-slider input {
+      display: none; }
+    .content-slider .background {
+      z-index: -1; }
     .content-slider ul {
       display: none; }
     .content-slider .started-block {

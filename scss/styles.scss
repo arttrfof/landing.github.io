@@ -1,6 +1,8 @@
 @import "reset.scss";
 @import "mixins.scss";
-
+html{
+  overflow-x: hidden;
+}
 body{
     font-family: $font;
     background:$bg;
@@ -1141,6 +1143,10 @@ footer{
   h2{
     font-size:30px;
   }
+  footer h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
   .join{
     h2{
       padding-top:30px;
@@ -1198,8 +1204,14 @@ footer{
     }
   }
   .content-slider {
+    input{
+      display: none;
+    }
     height:auto;
     padding:20px 10px;
+    .background{
+      z-index: -1;
+    }
     ul{
       display: none;
     }
