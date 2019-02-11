@@ -3,8 +3,9 @@ var sw = new ScrollWatch({
         console.log(data.el, '...is now in view');
     },
     watchOnce: true,
-    scrollThrottle:500,
-    ignoreClass: 'scroll-watch-ignore'
+    scrollThrottle:300,
+    ignoreClass: 'scroll-watch-ignore',
+    infiniteScroll:true
 });
 
 $('.testimonials-slider').slick({
